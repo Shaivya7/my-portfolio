@@ -1,0 +1,93 @@
+'use client'
+
+import { motion } from 'framer-motion'
+
+export default function Contact() {
+  return (
+    <section id="contact" className="py-40 px-8 lg:px-20 relative overflow-hidden bg-[#0a0908]">
+      {/* Background glow */}
+      <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full bg-[#c9a96e]/[0.05] blur-[140px]" />
+
+      <div className="max-w-7xl mx-auto relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 36 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.85 }}
+          className="text-center"
+        >
+          <p
+            className="text-[#c9a96e] text-[10px] tracking-[0.42em] uppercase mb-12"
+            style={{ fontFamily: 'var(--font-dm-var), system-ui, sans-serif' }}
+          >
+            06 — Contact
+          </p>
+
+          <h2
+            className="text-[#f0ede8] font-normal leading-[0.95] mb-8"
+            style={{
+              fontFamily: 'var(--font-playfair-var), Georgia, serif',
+              fontSize: 'clamp(56px, 9vw, 104px)',
+            }}
+          >
+            Let&apos;s talk.
+          </h2>
+
+          <motion.div
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="h-px w-12 bg-[#c9a96e] mx-auto mb-12 origin-center"
+          />
+
+          <p
+            className="text-[#7a7268] leading-[1.85] max-w-sm mx-auto mb-14"
+            style={{
+              fontFamily: 'var(--font-dm-var), system-ui, sans-serif',
+              fontSize: '14px',
+            }}
+          >
+            Open to senior PM roles, advisory conversations, and interesting
+            problems across AI, fintech, and 0-to-1 building.
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+            <a
+              href="mailto:shaivya7.7bora@gmail.com"
+              className="bg-[#c9a96e] text-[#0a0908] text-[10px] font-semibold tracking-[0.28em] uppercase px-8 py-4 hover:bg-[#e8c98a] transition-colors duration-300"
+              style={{ fontFamily: 'var(--font-dm-var), system-ui, sans-serif' }}
+            >
+              Send An Email
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#c9a96e] text-[10px] tracking-[0.22em] uppercase border-b border-[#c9a96e]/40 pb-px hover:border-[#c9a96e] transition-all duration-300"
+              style={{ fontFamily: 'var(--font-dm-var), system-ui, sans-serif' }}
+            >
+              Connect on LinkedIn →
+            </a>
+          </div>
+        </motion.div>
+      </div>
+
+      {/* Footer bar */}
+      <div className="mt-32 pt-8 border-t border-[#2a2520] flex flex-col sm:flex-row items-center justify-between gap-4 max-w-7xl mx-auto">
+        <span
+          className="text-[#4a4540] text-[13px]"
+          style={{ fontFamily: 'var(--font-playfair-var), Georgia, serif' }}
+        >
+          Shaivya Bora
+        </span>
+        <span
+          className="text-[#2a2520] text-[9px] tracking-[0.25em] uppercase"
+          style={{ fontFamily: 'var(--font-dm-var), system-ui, sans-serif' }}
+        >
+          © 2026 · Noida, India
+        </span>
+      </div>
+    </section>
+  )
+}
