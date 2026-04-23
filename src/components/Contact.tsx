@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const contactLinks = [
   { label: 'Send An Email', href: 'mailto:shaivya7.7bora@gmail.com', primary: true },
-  { label: 'Connect on LinkedIn →', href: 'https://linkedin.com/in/shaivyabora', primary: false },
+  { label: 'Connect on LinkedIn →', href: 'https://www.linkedin.com/in/shaivya7', primary: false },
 ]
 
 export default function Contact() {
@@ -101,7 +101,7 @@ export default function Contact() {
               Send An Email
             </a>
             <a
-              href="https://www.linkedin.com/in/shaivya-bora"
+              href="https://www.linkedin.com/in/shaivya7"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#c9a96e] text-[10px] tracking-[0.22em] uppercase border-b border-[#c9a96e]/40 pb-px hover:border-[#c9a96e] transition-all duration-300 font-semibold"
