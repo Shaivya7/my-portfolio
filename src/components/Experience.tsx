@@ -11,17 +11,20 @@ const experiences = [
     location: 'Noida',
     type: 'B2B SaaS · AI',
     description:
-      'Leading the full lifecycle of enterprise AI voice bots — development, onboarding, and deployment — across BFSI sales and app-journey use cases.',
+      'Leading the full lifecycle of enterprise AI voice bots — development, onboarding, and deployment — across BFSI sales and app-journey use cases for clients including one of India\'s largest Credit Card Issuers.',
     bullets: [
+      'Built & Managed revenue stream of $1M+ ARR from scratch for one of India\'s largest Credit Card Issuer.',
       'Built AI voice bots using STT, TTS & LLMs processing 75K+ daily calling minutes',
+      'Managing 1.5M+ leads pipeline through intelligent AI-driven prioritization and routing',
       'Revamped lead prioritization & SIP call-transfer for instant hangups with contextual human routing',
       'Created an internal GPT to craft, evaluate, and optimize high-quality bot prompts',
     ],
     metrics: [
+      { value: '$1M+', label: 'ARR built from scratch' },
       { value: '75K+', label: 'Daily calling minutes' },
-      { value: '+5pp', label: 'Conversion improvement' },
-      { value: 'STT · TTS · LLM', label: 'Voice stack owned' },
+      { value: '1.5M+', label: 'Leads in AI pipeline' },
     ],
+    featuredQuote: 'Built & Managed revenue stream of $1M+ ARR from scratch for one of India\'s largest Credit Card Issuer.',
   },
   {
     chapter: '02',
@@ -43,6 +46,7 @@ const experiences = [
       { value: '₹15Cr+', label: 'ARR delivered' },
       { value: '30%', label: 'KYC completion boost' },
     ],
+    featuredQuote: null,
   },
   {
     chapter: '03',
@@ -63,6 +67,7 @@ const experiences = [
       { value: '32%', label: 'Bounce rate (was 40%)' },
       { value: '30K+', label: 'Newsletter subscribers' },
     ],
+    featuredQuote: null,
   },
   {
     chapter: '04',
@@ -83,6 +88,7 @@ const experiences = [
       { value: '25%', label: 'Ad monetization growth' },
       { value: '0%', label: 'Churn rate maintained' },
     ],
+    featuredQuote: null,
   },
 ]
 
@@ -97,16 +103,19 @@ export default function Experience() {
           transition={{ duration: 0.65 }}
           className="mb-20"
         >
-          <p
-            className="text-[#c9a96e] text-[10px] tracking-[0.42em] uppercase mb-5"
-            style={{ fontFamily: 'var(--font-dm-var), system-ui, sans-serif' }}
-          >
-            02 — Work Experience
-          </p>
+          <div className="flex items-center gap-3 mb-5">
+            <div className="h-px w-8 bg-[#c9a96e]" />
+            <p
+              className="text-[#c9a96e] text-[10px] tracking-[0.42em] uppercase font-semibold"
+              style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
+            >
+              02 — Work Experience
+            </p>
+          </div>
           <h2
-            className="text-[#f0ede8] font-normal leading-[1.05]"
+            className="text-[#f0ede8] font-black leading-[1.05]"
             style={{
-              fontFamily: 'var(--font-playfair-var), Georgia, serif',
+              fontFamily: 'var(--font-playfair-var), Arial, sans-serif',
               fontSize: 'clamp(36px, 5vw, 54px)',
             }}
           >
@@ -126,10 +135,10 @@ export default function Experience() {
             >
               {/* Decorative chapter number */}
               <div
-                className="pointer-events-none select-none absolute right-0 top-1/2 -translate-y-1/2 font-light leading-none text-[#f0ede8] opacity-[0.028] group-hover:opacity-[0.05] transition-opacity duration-700"
+                className="pointer-events-none select-none absolute right-0 top-1/2 -translate-y-1/2 font-black leading-none text-[#f0ede8] opacity-[0.025] group-hover:opacity-[0.05] transition-opacity duration-700"
                 aria-hidden="true"
                 style={{
-                  fontFamily: 'var(--font-cormorant-var), Georgia, serif',
+                  fontFamily: 'var(--font-cormorant-var), Arial, sans-serif',
                   fontSize: 'clamp(140px, 20vw, 220px)',
                 }}
               >
@@ -139,80 +148,113 @@ export default function Experience() {
               <div className="relative z-10 grid lg:grid-cols-[260px_1fr] gap-10 lg:gap-20">
                 {/* Left: meta + metrics */}
                 <div>
-                  <p
-                    className="text-[#c9a96e] text-[9px] tracking-[0.35em] uppercase mb-5"
-                    style={{ fontFamily: 'var(--font-dm-var), system-ui, sans-serif' }}
+                  <span
+                    className="inline-block text-[#c9a96e] text-[9px] tracking-[0.35em] uppercase border border-[#c9a96e]/30 px-2 py-0.5 mb-5"
+                    style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
                   >
                     {exp.type}
-                  </p>
+                  </span>
                   <h3
-                    className="text-[#f0ede8] font-normal mb-1"
+                    className="text-[#f0ede8] font-black mb-1"
                     style={{
-                      fontFamily: 'var(--font-playfair-var), Georgia, serif',
+                      fontFamily: 'var(--font-playfair-var), Arial, sans-serif',
                       fontSize: '26px',
                     }}
                   >
                     {exp.company}
                   </h3>
                   <p
-                    className="text-[#7a7268] text-[12px] mb-0.5"
-                    style={{ fontFamily: 'var(--font-dm-var), system-ui, sans-serif' }}
+                    className="text-[#7a7268] text-[12px] mb-0.5 font-medium"
+                    style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
                   >
                     {exp.role}
                   </p>
                   <p
                     className="text-[#4a4540] text-[11px] mb-10"
-                    style={{ fontFamily: 'var(--font-dm-var), system-ui, sans-serif' }}
+                    style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
                   >
                     {exp.period} · {exp.location}
                   </p>
 
-                  {/* Metrics — pure typography, no boxes */}
-                  <div className="space-y-5">
+                  {/* Metrics — visual cards */}
+                  <div className="space-y-4">
                     {exp.metrics.map((m) => (
-                      <div key={m.label}>
-                        <div
-                          className="text-[#c9a96e] leading-none font-light mb-1"
-                          style={{
-                            fontFamily: 'var(--font-cormorant-var), Georgia, serif',
-                            fontSize: '34px',
-                          }}
-                        >
-                          {m.value}
-                        </div>
-                        <div
-                          className="text-[#4a4540] text-[10px] tracking-wide"
-                          style={{ fontFamily: 'var(--font-dm-var), system-ui, sans-serif' }}
-                        >
-                          {m.label}
+                      <div key={m.label} className="flex items-center gap-3">
+                        <div className="w-1 h-8 bg-[#c9a96e]/40 rounded-full shrink-0" />
+                        <div>
+                          <div
+                            className="text-[#c9a96e] leading-none font-black mb-0.5"
+                            style={{
+                              fontFamily: 'var(--font-cormorant-var), Arial, sans-serif',
+                              fontSize: '28px',
+                            }}
+                          >
+                            {m.value}
+                          </div>
+                          <div
+                            className="text-[#4a4540] text-[10px] tracking-wide"
+                            style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
+                          >
+                            {m.label}
+                          </div>
                         </div>
                       </div>
                     ))}
                   </div>
                 </div>
 
-                {/* Right: description + bullets */}
+                {/* Right: description + bullets + featured quote */}
                 <div className="flex flex-col justify-center">
                   <p
                     className="text-[#6a6560] leading-[1.9] mb-9"
                     style={{
-                      fontFamily: 'var(--font-dm-var), system-ui, sans-serif',
+                      fontFamily: 'var(--font-dm-var), Arial, sans-serif',
                       fontSize: '14px',
                     }}
                   >
                     {exp.description}
                   </p>
+
+                  {/* Featured quote callout */}
+                  {exp.featuredQuote && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 12 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.6, delay: 0.2 }}
+                      className="mb-9 border-l-2 border-[#c9a96e] bg-[#c9a96e]/[0.05] px-6 py-4 relative"
+                    >
+                      {/* Quote mark */}
+                      <span
+                        className="absolute -top-2 left-4 text-[#c9a96e]/40 leading-none select-none"
+                        style={{ fontSize: '48px', fontFamily: 'Arial, sans-serif' }}
+                        aria-hidden="true"
+                      >
+                        &ldquo;
+                      </span>
+                      <p
+                        className="text-[#e8c98a] leading-[1.7] font-semibold pt-3"
+                        style={{
+                          fontFamily: 'var(--font-dm-var), Arial, sans-serif',
+                          fontSize: '14px',
+                        }}
+                      >
+                        {exp.featuredQuote}
+                      </p>
+                    </motion.div>
+                  )}
+
                   <ul className="space-y-4">
                     {exp.bullets.map((bullet, bi) => (
                       <li
                         key={bi}
                         className="flex gap-4 text-[#5a5550] leading-[1.75]"
                         style={{
-                          fontFamily: 'var(--font-dm-var), system-ui, sans-serif',
+                          fontFamily: 'var(--font-dm-var), Arial, sans-serif',
                           fontSize: '13px',
                         }}
                       >
-                        <span className="text-[#c9a96e] shrink-0 mt-0.5 text-[10px]">—</span>
+                        <span className="text-[#c9a96e] shrink-0 mt-0.5 text-[10px] font-bold">—</span>
                         <span className="hover:text-[#7a7268] transition-colors duration-300">
                           {bullet}
                         </span>

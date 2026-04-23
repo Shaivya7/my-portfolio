@@ -12,13 +12,14 @@
   --muted: #7a7268;
   --muted-dark: #4a4540;
   --muted-darker: #2a2520;
+
+  /* All fonts → Arial */
+  --font-playfair-var: Arial, Helvetica, sans-serif;
+  --font-dm-var: Arial, Helvetica, sans-serif;
+  --font-cormorant-var: Arial, Helvetica, sans-serif;
 }
 
 @theme inline {
-  --font-playfair: var(--font-playfair-var), Georgia, serif;
-  --font-dm: var(--font-dm-var), system-ui, sans-serif;
-  --font-cormorant: var(--font-cormorant-var), Georgia, serif;
-
   --color-gold: #c9a96e;
   --color-gold-light: #e8c98a;
   --color-bg: #0a0908;
@@ -37,6 +38,7 @@ html {
 body {
   background: var(--bg);
   color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Film grain overlay */
@@ -60,4 +62,14 @@ body::before {
 ::selection {
   background: var(--gold);
   color: var(--bg);
+}
+
+/* Animated skill bar */
+@keyframes fillBar {
+  from { width: 0%; }
+  to { width: var(--target-w); }
+}
+
+.skill-bar-fill {
+  animation: fillBar 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
