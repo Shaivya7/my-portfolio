@@ -8,7 +8,7 @@ const projects = [
     category: 'Sports · Gaming',
     title: 'Football Face-Off',
     description:
-      'Pick your best XI for every position in the Premier League. For each of the 11 positions plus the manager, choose from 7 player options — then lock in your all-time dream team.',
+      'Pick your best XI for every position in the Premier League. For each of the 11 positions plus the manager, choose from 7 player options, then lock in your all-time dream team.',
     tags: ['Side Project', 'Web App'],
     color: '#1a3a2a',
     accent: '#4ade80',
@@ -19,7 +19,7 @@ const projects = [
     category: 'AI · Commerce',
     title: 'AI Quick Commerce Assistant',
     description:
-      'An LLM-powered assistant for quick commerce decisions — helping users discover, compare, and order from local stores faster.',
+      'An LLM-powered assistant for quick commerce decisions, helping users discover, compare, and order from local stores faster.',
     tags: ['AI', 'LLM', 'Commerce'],
     color: '#1a1a3a',
     accent: '#818cf8',
@@ -30,7 +30,7 @@ const projects = [
     category: 'Productivity · Chrome',
     title: 'Zen Mode Extension',
     description:
-      'Detects when you\'re about to join a meeting and nudges you to pause first. Suggests calming music, guides a 2-minute meditation, and helps you breathe — so you show up present, not frazzled.',
+      'Detects when you\'re about to join a meeting and nudges you to pause first. Suggests calming music, guides a 2-minute meditation, and helps you breathe so you show up present, not frazzled.',
     tags: ['Chrome Extension', 'Productivity'],
     color: '#2a1a1a',
     accent: '#fb923c',
@@ -55,7 +55,7 @@ export default function Projects() {
               className="text-[#c9a96e] text-[10px] tracking-[0.42em] uppercase font-semibold"
               style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
             >
-              03 — Side Projects
+              03 / Side Projects
             </p>
           </div>
           <h2

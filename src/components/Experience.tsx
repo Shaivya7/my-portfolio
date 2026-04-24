@@ -6,12 +6,12 @@ const experiences = [
   {
     chapter: '01',
     company: 'SquadStack',
-    role: 'Product Manager — AI Agents',
-    period: 'Sept 2025 — Present',
+    role: 'Product Manager, AI Agents',
+    period: 'Sept 2025 - Present',
     location: 'Noida',
     type: 'B2B SaaS · AI',
     description:
-      'Leading the full lifecycle of enterprise AI voice bots — development, onboarding, and deployment — across BFSI sales and app-journey use cases for clients including one of India\'s largest Credit Card Issuers.',
+      'Leading the full lifecycle of enterprise AI voice bots, from development and onboarding to deployment, across BFSI sales and app-journey use cases for clients including one of India\'s largest Credit Card Issuers.',
     bullets: [
       'Built & Managed revenue stream of $1M+ ARR from scratch for one of India\'s largest Credit Card Issuer.',
       'Built AI voice bots using STT, TTS & LLMs processing 75K+ daily calling minutes',
@@ -30,13 +30,13 @@ const experiences = [
     chapter: '02',
     company: 'LEO1 by Financepeer',
     role: 'Product Manager II',
-    period: 'Oct 2022 — Nov 2024',
+    period: 'Oct 2022 - Nov 2024',
     location: 'Mumbai',
     type: 'Fintech · Series-B',
     description:
-      'Led the LEO1 Debit-cum-Identity Card (PPI) from zero — building a transacting user base of 100K+ for a Series-B fintech startup.',
+      'Led the LEO1 Debit-cum-Identity Card (PPI) from zero, building a transacting user base of 100K+ for a Series-B fintech startup.',
     bullets: [
-      'Implemented Min-KYC with NSDL Bank, Transcorp, VISA & MasterCard — adding ₹15Cr+ to ARR',
+      'Implemented Min-KYC with NSDL Bank, Transcorp, VISA & MasterCard, adding ₹15Cr+ to ARR',
       'Cut KYC completion time from 5 mins to 2 mins, boosting completions by 30%',
       'Revamped reward ecosystem: ₹5Cr+ in fee revenue and ₹25L+ in gift card purchases',
       'Launched Virtual Stock Market with 900K+ LEO1 Coin trades and LEO1 Stores boosting POS sales by 20%',
@@ -52,13 +52,13 @@ const experiences = [
     chapter: '03',
     company: 'Sportskeeda',
     role: 'Associate Product Manager',
-    period: 'Jan 2022 — Sept 2022',
+    period: 'Jan 2022 - Sept 2022',
     location: 'Bengaluru',
     type: 'Media · Content',
     description:
       'Shipped features that directly impacted 22M+ monthly users on web and app across one of India\'s largest sports media platforms.',
     bullets: [
-      'Launched Timeless Classics widget — reduced bounce rate from 40% to 32%',
+      'Launched Timeless Classics widget, reduced bounce rate from 40% to 32%',
       'Built Sportskeeda Newsletters: 30K+ subscribers, 30% open rate',
       'Enhanced Article Queue efficiency: 8 hrs → 6 hrs via improved dashboards and alerting',
     ],
@@ -73,13 +73,13 @@ const experiences = [
     chapter: '04',
     company: 'GreedyGame',
     role: 'Partnerships Manager',
-    period: 'Apr 2021 — Jan 2022',
+    period: 'Apr 2021 - Jan 2022',
     location: 'Bengaluru',
     type: 'Ad-tech · B2B',
     description:
       'Managed a portfolio of 60+ Android apps, driving ad monetization growth through enhanced placement strategies and improved CPM performance.',
     bullets: [
-      'Managed 60+ Android apps with zero churn — 25% increase in ad monetization',
+      'Managed 60+ Android apps with zero churn, 25% increase in ad monetization',
       'Analyzed Google Ad Manager, AdMob & SDK to develop growth algorithms',
       'Co-launched ROI tracking tool and customer chatbot for improved CX',
     ],
@@ -109,7 +109,7 @@ export default function Experience() {
               className="text-[#c9a96e] text-[10px] tracking-[0.42em] uppercase font-semibold"
               style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
             >
-              02 — Work Experience
+              02 / Work Experience
             </p>
           </div>
           <h2
@@ -176,7 +176,7 @@ export default function Experience() {
                     {exp.period} · {exp.location}
                   </p>
 
-                  {/* Metrics — visual cards */}
+                  {/* Metrics: visual cards */}
                   <div className="space-y-4">
                     {exp.metrics.map((m) => (
                       <div key={m.label} className="flex items-center gap-3">
@@ -254,7 +254,7 @@ export default function Experience() {
                           fontSize: '13px',
                         }}
                       >
-                        <span className="text-[#c9a96e] shrink-0 mt-0.5 text-[10px] font-bold">—</span>
+                        <span className="text-[#c9a96e] shrink-0 mt-0.5 text-[10px] font-bold">·</span>
                         <span className="hover:text-[#7a7268] transition-colors duration-300">
                           {bullet}
                         </span>

@@ -92,7 +92,7 @@ export default function Skills() {
               className="text-[#c9a96e] text-[10px] tracking-[0.42em] uppercase font-semibold"
               style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
             >
-              04 — Skills
+              04 / Skills
             </p>
           </div>
           <h2

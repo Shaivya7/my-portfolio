@@ -122,7 +122,7 @@ export default function Hero() {
               fontSize: '15px',
             }}
           >
-            Building enterprise AI voice bots at SquadStack — 75K+ daily calling minutes, 1.5M+ leads in pipeline.
+            Building enterprise AI voice bots at SquadStack. 75K+ daily calling minutes, 1.5M+ leads in pipeline.
             Previously built a $1M+ ARR revenue stream from scratch at one of India&apos;s largest Credit Card Issuers.
           </motion.p>
 

@@ -42,7 +42,7 @@ export default function About() {
               className="text-[#c9a96e] text-[10px] tracking-[0.42em] uppercase font-semibold"
               style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
             >
-              01 — About
+              01 / About
             </p>
           </div>
           <h2
@@ -61,14 +61,14 @@ export default function About() {
           >
             <p>
               I&apos;ve spent 4.5+ years building and scaling products across Fintech, Media,
-              AI and B2B SaaS — from 0-to-1 launches to managing growth at Series-B startups.
+              AI and B2B SaaS, from 0-to-1 launches to managing growth at Series-B startups.
             </p>
             <p>
               Built a $1M+ ARR revenue stream from scratch for one of India&apos;s largest Credit Card
               Issuers, and scaled 1.5M+ leads through an AI-driven calling engine at SquadStack.
             </p>
             <p>
-              I took a deliberate career break — worked on my health, built AI side projects
+              I took a deliberate career break. Worked on my health, built AI side projects
               from scratch, started a food business, and traveled solo for a month. I returned
               sharper, more intentional, and ready to build what matters.
             </p>

@@ -45,7 +45,7 @@ export default function Contact() {
               className="text-[#c9a96e] text-[10px] tracking-[0.42em] uppercase font-semibold"
               style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
             >
-              06 — Contact
+              06 / Contact
             </p>
             <div className="h-px w-8 bg-[#c9a96e]" />
           </div>

@@ -7,7 +7,7 @@ const posts = [
     number: '001',
     title: 'Building AI Voice Bots at Scale: Lessons from SquadStack',
     excerpt:
-      'How we went from concept to 75K+ daily calling minutes and 1.5M+ leads — the product decisions, technical trade-offs, and what I learned about shipping AI in enterprise.',
+      'How we went from concept to 75K+ daily calling minutes and 1.5M+ leads. The product decisions, technical trade-offs, and what I learned about shipping AI in enterprise.',
     readTime: '~8 min',
     tags: ['AI', 'Product'],
   },
@@ -15,7 +15,7 @@ const posts = [
     number: '002',
     title: 'From 0 to $1M+ ARR: How We Built the LEO1 Card in Indian Fintech',
     excerpt:
-      'A detailed breakdown of building a $1M+ ARR revenue stream from scratch — KYC flows, credit card partnerships, and the metrics that actually moved the needle.',
+      'A detailed breakdown of building a $1M+ ARR revenue stream from scratch. KYC flows, credit card partnerships, and the metrics that actually moved the needle.',
     readTime: '~10 min',
     tags: ['Fintech', 'Growth'],
   },
@@ -46,7 +46,7 @@ export default function Blog() {
               className="text-[#c9a96e] text-[10px] tracking-[0.42em] uppercase font-semibold"
               style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
             >
-              05 — Writing
+              05 / Writing
             </p>
           </div>
           <h2
@@ -62,7 +62,7 @@ export default function Blog() {
             className="text-[#4a4540] text-[13px]"
             style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
           >
-            Essays coming soon — drafts in progress.
+            Essays coming soon. Drafts in progress.
           </p>
         </motion.div>
 
