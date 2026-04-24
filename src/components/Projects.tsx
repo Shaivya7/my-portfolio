@@ -12,7 +12,7 @@ const projects = [
     tags: ['Side Project', 'Web App'],
     color: '#1a3a2a',
     accent: '#4ade80',
-    href: '#',
+    href: 'https://eatwisethinktwice.replit.app/',
   },
   {
     index: '02',
@@ -23,7 +23,7 @@ const projects = [
     tags: ['AI', 'LLM', 'Commerce'],
     color: '#1a1a3a',
     accent: '#818cf8',
-    href: '#',
+    href: 'https://navy-trumpet-b8c.notion.site/Smart-Quick-Commerce-Ordering-Assistant-19ef2aedcf48803c9d5efe8c7fd5d124',
   },
   {
     index: '03',
@@ -34,7 +34,7 @@ const projects = [
     tags: ['Chrome Extension', 'Productivity'],
     color: '#2a1a1a',
     accent: '#fb923c',
-    href: '#',
+    href: 'https://drive.google.com/file/d/1Y_5leRLfKyLXYmnCMnxLA6Dr5gbjepjB/view',
   },
 ]
 
@@ -78,6 +78,8 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
+              target="_blank"
+              rel="noopener noreferrer"
               className="border border-[#2a2520] p-8 group hover:border-[#4a4540] transition-all duration-500 block relative overflow-hidden"
             >
               {/* Hover gradient background */}
