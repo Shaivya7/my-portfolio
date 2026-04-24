@@ -12,7 +12,7 @@ const projects = [
     tags: ['Side Project', 'Web App'],
     color: '#1a3a2a',
     accent: '#4ade80',
-    href: 'https://eatwisethinktwice.replit.app/',
+    href: 'https://faceoff-premierleague.replit.app/',
   },
   {
     index: '02',
