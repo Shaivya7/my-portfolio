@@ -46,7 +46,7 @@ const experiences = [
       { value: '₹15Cr+', label: 'ARR delivered' },
       { value: '30%', label: 'KYC completion boost' },
     ],
-    featuredQuote: null,
+    featuredQuote: 'Implemented Min-KYC with NSDL Bank, Transcorp, VISA & MasterCard — adding ₹15Cr+ to ARR and cutting completion time from 5 mins to 2 mins.',
   },
   {
     chapter: '03',
@@ -67,7 +67,7 @@ const experiences = [
       { value: '32%', label: 'Bounce rate (was 40%)' },
       { value: '30K+', label: 'Newsletter subscribers' },
     ],
-    featuredQuote: null,
+    featuredQuote: 'Launched Timeless Classics widget on 22M+ monthly users — dropped bounce rate from 40% to 32% and built a newsletter to 30K subscribers at 30% open rate.',
   },
   {
     chapter: '04',
@@ -88,7 +88,7 @@ const experiences = [
       { value: '25%', label: 'Ad monetization growth' },
       { value: '0%', label: 'Churn rate maintained' },
     ],
-    featuredQuote: null,
+    featuredQuote: 'Managed 60+ Android apps with zero churn — grew ad monetization 25% through placement strategy and CPM optimization.',
   },
 ]
 
