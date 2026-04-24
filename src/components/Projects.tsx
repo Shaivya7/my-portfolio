@@ -5,6 +5,17 @@ import { motion } from 'framer-motion'
 const projects = [
   {
     index: '01',
+    category: 'AI · QA Tooling',
+    title: 'Rehearsal',
+    description:
+      'A QA tool for testing AI voice bot prompts before they go live. Simulate lead conversations, run test cases, and get pass/fail verdicts so you ship with confidence.',
+    tags: ['Work Project', 'AI', 'Claude Code'],
+    color: '#1a2a2a',
+    accent: '#2dd4bf',
+    href: 'https://rehearsal-henna.vercel.app',
+  },
+  {
+    index: '02',
     category: 'Sports · Gaming',
     title: 'Football Face-Off',
     description:
@@ -15,7 +26,7 @@ const projects = [
     href: 'https://faceoff-premierleague.replit.app/',
   },
   {
-    index: '02',
+    index: '03',
     category: 'AI · Commerce',
     title: 'AI Quick Commerce Assistant',
     description:
@@ -26,7 +37,7 @@ const projects = [
     href: 'https://navy-trumpet-b8c.notion.site/Smart-Quick-Commerce-Ordering-Assistant-19ef2aedcf48803c9d5efe8c7fd5d124',
   },
   {
-    index: '03',
+    index: '04',
     category: 'Productivity · Chrome',
     title: 'Zen Mode Extension',
     description:
@@ -35,17 +46,6 @@ const projects = [
     color: '#2a1a1a',
     accent: '#fb923c',
     href: 'https://drive.google.com/file/d/1Y_5leRLfKyLXYmnCMnxLA6Dr5gbjepjB/view',
-  },
-  {
-    index: '04',
-    category: 'AI · QA Tooling',
-    title: 'Rehearsal',
-    description:
-      'A QA tool for testing AI voice bot prompts before they go live. Simulate lead conversations, run test cases, and get pass/fail verdicts so you ship with confidence.',
-    tags: ['AI', 'Developer Tool', 'Claude Code'],
-    color: '#1a2a2a',
-    accent: '#2dd4bf',
-    href: 'https://rehearsal-henna.vercel.app',
   },
 ]
 
