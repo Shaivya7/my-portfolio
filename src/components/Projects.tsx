@@ -13,6 +13,7 @@ const projects = [
     color: '#1a2a2a',
     accent: '#2dd4bf',
     href: 'https://rehearsal-henna.vercel.app',
+    live: true,
   },
   {
     index: '02',
@@ -119,9 +120,21 @@ export default function Projects() {
                     >
                       {project.index}
                     </span>
-                    <span className="text-[#7a7268] group-hover:text-[#c9a96e] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 text-lg">
-                      ↗
-                    </span>
+                    <div className="flex items-center gap-2">
+                      {project.live && (
+                        <div className="relative flex items-center gap-1.5">
+                          <motion.div
+                            animate={{ scale: [1, 1.8, 1], opacity: [0.7, 0, 0.7] }}
+                            transition={{ duration: 2, repeat: Infinity }}
+                            className="absolute w-2 h-2 rounded-full bg-emerald-400"
+                          />
+                          <div className="w-2 h-2 rounded-full bg-emerald-400" />
+                        </div>
+                      )}
+                      <span className="text-[#7a7268] group-hover:text-[#c9a96e] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 text-lg">
+                        ↗
+                      </span>
+                    </div>
                   </div>
 
                   <p
