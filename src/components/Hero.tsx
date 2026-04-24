@@ -17,7 +17,7 @@ const stats = [
   { value: '1.5M+', label: 'Leads managed via AI', note: 'SquadStack', icon: '📊' },
   { value: '$1M+', label: 'ARR built from scratch', note: 'Credit card issuer', icon: '💳' },
   { value: '100K+', label: 'Users scaled from zero', note: 'LEO1 Card', icon: '🚀' },
-  { value: '4.5+', label: 'Years of experience', note: 'Across 4 industries', icon: '⚡' },
+  { value: '4.5+', label: 'Years of experience', note: 'Across 3 industries', icon: '⚡' },
 ]
 
 export default function Hero() {
@@ -49,7 +49,7 @@ export default function Hero() {
             transform: 'rotate(180deg)',
           }}
         >
-          Noida · India · Open to Opportunities
+          Noida · India
         </span>
       </div>
 
@@ -67,7 +67,7 @@ export default function Hero() {
               className="text-[#c9a96e] text-[11px] tracking-[0.4em] uppercase font-semibold"
               style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
             >
-              Product Manager
+              Product Manager · Builder
             </span>
           </motion.div>
 
@@ -99,7 +99,7 @@ export default function Hero() {
           </motion.div>
 
           <motion.div variants={fadeUp} className="flex items-center gap-4 mb-9">
-            {['Fintech', 'AI', 'Media', 'B2B SaaS'].map((tag) => (
+            {['Fintech', 'AI', 'Media'].map((tag) => (
               <span
                 key={tag}
                 className="text-[#8a8480] text-[9px] tracking-[0.3em] uppercase border border-[#3a3530] px-2.5 py-1"

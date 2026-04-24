@@ -12,7 +12,7 @@ const timeline = [
 const highlights = [
   { value: '$1M+', label: 'ARR Built' },
   { value: '1.5M+', label: 'Leads Managed' },
-  { value: '4+', label: 'Industries' },
+  { value: '3+', label: 'Industries' },
   { value: '4.5+', label: 'Years' },
 ]
 
