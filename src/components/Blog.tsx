@@ -59,7 +59,7 @@ export default function Blog() {
             Thinking out loud.
           </h2>
           <p
-            className="text-[#4a4540] text-[13px]"
+            className="text-[#7a7268] text-[13px]"
             style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
           >
             Essays coming soon. Drafts in progress.
@@ -79,7 +79,7 @@ export default function Blog() {
               <div className="grid lg:grid-cols-[180px_1fr] gap-6 lg:gap-16 items-start">
                 <div className="flex items-center gap-4">
                   <span
-                    className="text-[#2a2520] leading-none font-black group-hover:text-[#c9a96e]/20 transition-colors duration-500"
+                    className="text-[#4a4540] leading-none font-black group-hover:text-[#c9a96e]/40 transition-colors duration-500"
                     style={{
                       fontFamily: 'var(--font-cormorant-var), Arial, sans-serif',
                       fontSize: '22px',
@@ -88,7 +88,7 @@ export default function Blog() {
                     {post.number}
                   </span>
                   <span
-                    className="text-[#3a3530] text-[9px] tracking-[0.2em] uppercase border border-[#2a2520] px-2 py-0.5"
+                    className="text-[#6a6560] text-[9px] tracking-[0.2em] uppercase border border-[#3a3530] px-2 py-0.5"
                     style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
                   >
                     Draft
@@ -97,7 +97,7 @@ export default function Blog() {
 
                 <div>
                   <h3
-                    className="text-[#5a5550] font-bold mb-3 leading-snug group-hover:text-[#7a7268] transition-colors duration-300"
+                    className="text-[#a8a49e] font-bold mb-3 leading-snug group-hover:text-[#d8d4ce] transition-colors duration-300"
                     style={{
                       fontFamily: 'var(--font-playfair-var), Arial, sans-serif',
                       fontSize: '18px',
@@ -106,7 +106,7 @@ export default function Blog() {
                     {post.title}
                   </h3>
                   <p
-                    className="text-[#3a3530] leading-[1.8] mb-4 max-w-xl"
+                    className="text-[#7a7268] leading-[1.8] mb-4 max-w-xl"
                     style={{
                       fontFamily: 'var(--font-dm-var), Arial, sans-serif',
                       fontSize: '12px',
@@ -118,14 +118,14 @@ export default function Blog() {
                     {post.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-[#3a3530] text-[9px] tracking-[0.2em] uppercase border border-[#2a2520] px-2 py-0.5"
+                        className="text-[#6a6560] text-[9px] tracking-[0.2em] uppercase border border-[#3a3530] px-2 py-0.5"
                         style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
                       >
                         {tag}
                       </span>
                     ))}
                     <span
-                      className="text-[#2a2520] text-[9px]"
+                      className="text-[#5a5550] text-[9px]"
                       style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
                     >
                       · {post.readTime}

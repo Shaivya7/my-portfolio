@@ -101,6 +101,13 @@ export default function Contact() {
               Send An Email
             </a>
             <a
+              href="tel:+918107667477"
+              className="text-[#c9a96e] text-[10px] tracking-[0.22em] uppercase border-b border-[#c9a96e]/40 pb-px hover:border-[#c9a96e] transition-all duration-300 font-semibold"
+              style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
+            >
+              +91 81076 67477
+            </a>
+            <a
               href="https://www.linkedin.com/in/shaivya7"
               target="_blank"
               rel="noopener noreferrer"

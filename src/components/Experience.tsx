@@ -164,13 +164,13 @@ export default function Experience() {
                     {exp.company}
                   </h3>
                   <p
-                    className="text-[#7a7268] text-[12px] mb-0.5 font-medium"
+                    className="text-[#a8a49e] text-[12px] mb-0.5 font-medium"
                     style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
                   >
                     {exp.role}
                   </p>
                   <p
-                    className="text-[#4a4540] text-[11px] mb-10"
+                    className="text-[#7a7268] text-[11px] mb-10"
                     style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
                   >
                     {exp.period} · {exp.location}
@@ -192,7 +192,7 @@ export default function Experience() {
                             {m.value}
                           </div>
                           <div
-                            className="text-[#4a4540] text-[10px] tracking-wide"
+                            className="text-[#7a7268] text-[10px] tracking-wide"
                             style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
                           >
                             {m.label}
@@ -206,7 +206,7 @@ export default function Experience() {
                 {/* Right: description + bullets + featured quote */}
                 <div className="flex flex-col justify-center">
                   <p
-                    className="text-[#9a9490] leading-[1.9] mb-9"
+                    className="text-[#b8b4ae] leading-[1.9] mb-9"
                     style={{
                       fontFamily: 'var(--font-dm-var), Arial, sans-serif',
                       fontSize: '14px',
@@ -248,14 +248,14 @@ export default function Experience() {
                     {exp.bullets.map((bullet, bi) => (
                       <li
                         key={bi}
-                        className="flex gap-4 text-[#8a8480] leading-[1.75]"
+                        className="flex gap-4 text-[#b0aba4] leading-[1.75]"
                         style={{
                           fontFamily: 'var(--font-dm-var), Arial, sans-serif',
                           fontSize: '13px',
                         }}
                       >
                         <span className="text-[#c9a96e] shrink-0 mt-0.5 text-[10px] font-bold">·</span>
-                        <span className="hover:text-[#7a7268] transition-colors duration-300">
+                        <span className="hover:text-[#a8a49e] transition-colors duration-300">
                           {bullet}
                         </span>
                       </li>

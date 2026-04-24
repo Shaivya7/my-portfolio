@@ -56,7 +56,7 @@ export default function About() {
           </h2>
 
           <div
-            className="space-y-5 text-[#7a7268] leading-[1.9] mb-10"
+            className="space-y-5 text-[#a8a49e] leading-[1.9] mb-10"
             style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif', fontSize: '14px' }}
           >
             <p>
@@ -85,7 +85,7 @@ export default function About() {
                   {h.value}
                 </div>
                 <div
-                  className="text-[#4a4540] text-[9px] tracking-wide uppercase"
+                  className="text-[#7a7268] text-[9px] tracking-wide uppercase"
                   style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
                 >
                   {h.label}
@@ -122,7 +122,7 @@ export default function About() {
           className="lg:pt-16"
         >
           <p
-            className="text-[#4a4540] text-[9px] tracking-[0.35em] uppercase mb-8 font-semibold"
+            className="text-[#7a7268] text-[9px] tracking-[0.35em] uppercase mb-8 font-semibold"
             style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
           >
             Career Path
@@ -160,7 +160,7 @@ export default function About() {
                   </div>
 
                   <span
-                    className="text-[#7a7268] text-[11px] tracking-wide w-14 shrink-0 pt-0.5 font-bold"
+                    className="text-[#a8a49e] text-[11px] tracking-wide w-14 shrink-0 pt-0.5 font-bold"
                     style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
                   >
                     {item.year}
@@ -197,7 +197,7 @@ export default function About() {
           {/* Education */}
           <div className="mt-10 pt-8 border-t border-[#2a2520]">
             <p
-              className="text-[#4a4540] text-[9px] tracking-[0.35em] uppercase mb-4 font-semibold"
+              className="text-[#7a7268] text-[9px] tracking-[0.35em] uppercase mb-4 font-semibold"
               style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
             >
               Education

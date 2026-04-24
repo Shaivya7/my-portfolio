@@ -9,7 +9,7 @@ const projects = [
     title: 'Football Face-Off',
     description:
       'Pick your best XI for every position in the Premier League. For each of the 11 positions plus the manager, choose from 7 player options, then lock in your all-time dream team.',
-    tags: ['Side Project', 'Web App'],
+    tags: ['Side Project', 'Web App', 'Replit'],
     color: '#1a3a2a',
     accent: '#4ade80',
     href: 'https://faceoff-premierleague.replit.app/',
@@ -20,7 +20,7 @@ const projects = [
     title: 'AI Quick Commerce Assistant',
     description:
       'An LLM-powered assistant for quick commerce decisions, helping users discover, compare, and order from local stores faster.',
-    tags: ['AI', 'LLM', 'Commerce'],
+    tags: ['AI', 'LLM', 'Commerce', 'Replit'],
     color: '#1a1a3a',
     accent: '#818cf8',
     href: 'https://navy-trumpet-b8c.notion.site/Smart-Quick-Commerce-Ordering-Assistant-19ef2aedcf48803c9d5efe8c7fd5d124',
@@ -31,7 +31,7 @@ const projects = [
     title: 'Zen Mode Extension',
     description:
       'Detects when you\'re about to join a meeting and nudges you to pause first. Suggests calming music, guides a 2-minute meditation, and helps you breathe so you show up present, not frazzled.',
-    tags: ['Chrome Extension', 'Productivity'],
+    tags: ['Chrome Extension', 'Productivity', 'Replit'],
     color: '#2a1a1a',
     accent: '#fb923c',
     href: 'https://drive.google.com/file/d/1Y_5leRLfKyLXYmnCMnxLA6Dr5gbjepjB/view',
@@ -42,7 +42,7 @@ const projects = [
     title: 'Rehearsal',
     description:
       'A QA tool for testing AI voice bot prompts before they go live. Simulate lead conversations, run test cases, and get pass/fail verdicts so you ship with confidence.',
-    tags: ['AI', 'Developer Tool', 'LLM'],
+    tags: ['AI', 'Developer Tool', 'Claude Code'],
     color: '#1a2a2a',
     accent: '#2dd4bf',
     href: 'https://rehearsal-henna.vercel.app',
@@ -111,7 +111,7 @@ export default function Projects() {
                 <div className="relative z-10">
                   <div className="flex items-start justify-between mb-8">
                     <span
-                      className="text-[#2a2520] leading-none font-black group-hover:opacity-40 transition-opacity duration-500"
+                      className="text-[#4a4540] leading-none font-black group-hover:text-[#c9a96e]/30 transition-colors duration-500"
                       style={{
                         fontFamily: 'var(--font-cormorant-var), Arial, sans-serif',
                         fontSize: '52px',
@@ -119,13 +119,13 @@ export default function Projects() {
                     >
                       {project.index}
                     </span>
-                    <span className="text-[#4a4540] group-hover:text-[#c9a96e] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 text-lg">
+                    <span className="text-[#7a7268] group-hover:text-[#c9a96e] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 text-lg">
                       ↗
                     </span>
                   </div>
 
                   <p
-                    className="text-[#4a4540] text-[9px] tracking-[0.35em] uppercase mb-3 font-semibold"
+                    className="text-[#7a7268] text-[9px] tracking-[0.35em] uppercase mb-3 font-semibold"
                     style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
                   >
                     {project.category}
@@ -140,7 +140,7 @@ export default function Projects() {
                     {project.title}
                   </h3>
                   <p
-                    className="text-[#8a8480] leading-[1.8] mb-8"
+                    className="text-[#b0aba4] leading-[1.8] mb-8"
                     style={{
                       fontFamily: 'var(--font-dm-var), Arial, sans-serif',
                       fontSize: '13px',

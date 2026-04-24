@@ -129,7 +129,7 @@ export default function Skills() {
                 {group.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="text-[#a09890] text-[11px] border border-[#2a2520] px-2.5 py-1 hover:border-[#c9a96e]/40 hover:text-[#e8ddd0] transition-all duration-300 cursor-default leading-none"
+                    className="text-[#c0bdb8] text-[11px] border border-[#2a2520] px-2.5 py-1 hover:border-[#c9a96e]/40 hover:text-[#f0ede8] transition-all duration-300 cursor-default leading-none"
                     style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
                   >
                     {skill}

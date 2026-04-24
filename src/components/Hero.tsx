@@ -42,7 +42,7 @@ export default function Hero() {
       {/* Vertical editorial label */}
       <div className="hidden xl:block absolute left-5 top-1/2 -translate-y-1/2">
         <span
-          className="text-[#2a2520] text-[9px] tracking-[0.55em] uppercase whitespace-nowrap"
+          className="text-[#4a4540] text-[9px] tracking-[0.55em] uppercase whitespace-nowrap"
           style={{
             fontFamily: 'var(--font-dm-var), Arial, sans-serif',
             writingMode: 'vertical-rl',
@@ -92,11 +92,7 @@ export default function Hero() {
             Bora.
           </motion.h1>
 
-          {/* Gold accent bar under name */}
-          <motion.div
-            variants={fadeUp}
-            className="flex items-center gap-0 mb-9"
-          >
+          <motion.div variants={fadeUp} className="flex items-center gap-0 mb-9">
             <div className="h-1 w-16 bg-[#c9a96e]" />
             <div className="h-1 w-8 bg-[#c9a96e]/40" />
             <div className="h-1 w-4 bg-[#c9a96e]/15" />
@@ -106,7 +102,7 @@ export default function Hero() {
             {['Fintech', 'AI', 'Media', 'B2B SaaS'].map((tag) => (
               <span
                 key={tag}
-                className="text-[#4a4540] text-[9px] tracking-[0.3em] uppercase border border-[#2a2520] px-2.5 py-1"
+                className="text-[#8a8480] text-[9px] tracking-[0.3em] uppercase border border-[#3a3530] px-2.5 py-1"
                 style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
               >
                 {tag}
@@ -116,7 +112,7 @@ export default function Hero() {
 
           <motion.p
             variants={fadeUp}
-            className="text-[#7a7268] leading-[1.85] max-w-[460px] mb-12"
+            className="text-[#b0aba4] leading-[1.85] max-w-[460px] mb-12"
             style={{
               fontFamily: 'var(--font-dm-var), Arial, sans-serif',
               fontSize: '15px',
@@ -152,7 +148,7 @@ export default function Hero() {
           className="hidden lg:flex flex-col justify-center"
         >
           <p
-            className="text-[#4a4540] text-[9px] tracking-[0.38em] uppercase mb-4"
+            className="text-[#7a7268] text-[9px] tracking-[0.38em] uppercase mb-4"
             style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
           >
             Impact by numbers
@@ -160,7 +156,7 @@ export default function Hero() {
           <div className="border border-[#2a2520] divide-y divide-[#2a2520]">
             {stats.map((s, i) => (
               <motion.div
-                key={s.value}
+                key={s.label}
                 initial={{ opacity: 0, x: 16 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 1.2 + i * 0.1 }}
@@ -178,13 +174,13 @@ export default function Hero() {
                     {s.value}
                   </div>
                   <div
-                    className="text-[#f0ede8] text-[11px] font-medium mb-0.5"
+                    className="text-[#d8d4ce] text-[11px] font-medium mb-0.5"
                     style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
                   >
                     {s.label}
                   </div>
                   <div
-                    className="text-[#4a4540] text-[10px]"
+                    className="text-[#7a7268] text-[10px]"
                     style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
                   >
                     {s.note}
@@ -205,7 +201,7 @@ export default function Hero() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
       >
         <span
-          className="text-[#2a2520] text-[8px] tracking-[0.45em] uppercase"
+          className="text-[#4a4540] text-[8px] tracking-[0.45em] uppercase"
           style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
         >
           Scroll
