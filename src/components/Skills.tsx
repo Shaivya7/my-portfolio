@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 const groups = [
   {
     category: 'Product Management',
+    icon: '◈',
     skills: [
       'Product Strategy',
       'Roadmapping',
@@ -12,20 +13,25 @@ const groups = [
       'Stakeholder Management',
       'JIRA / Trello',
       '0 to 1 Launches',
+      'User Research',
     ],
   },
   {
-    category: 'AI & LLM',
+    category: 'AI & Building',
+    icon: '◎',
     skills: [
+      'AI',
       'LLM Product Ownership',
-      'AI Voice Bots (STT / TTS)',
       'Prompt Engineering',
+      'Claude Code',
+      'Vibe Coding',
+      'AI Voice Bots (STT / TTS)',
       'Bot Evaluation & QA',
-      'B2B SaaS Growth',
     ],
   },
   {
     category: 'Analytics & Data',
+    icon: '◉',
     skills: [
       'SQL',
       'Google Analytics 4',
@@ -37,6 +43,7 @@ const groups = [
   },
   {
     category: 'Design & Prototyping',
+    icon: '◇',
     skills: [
       'Figma',
       'Balsamiq',
@@ -48,12 +55,14 @@ const groups = [
   },
   {
     category: 'Domain Expertise',
+    icon: '◆',
     skills: [
       'Fintech & KYC Flows',
       'PPI Cards',
-      'Ad Monetization',
-      'Media & Content Products',
       'Enterprise AI',
+      'Ad Monetization',
+      'Media & Content',
+      'B2B SaaS Growth',
     ],
   },
 ]
@@ -89,32 +98,44 @@ export default function Skills() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {groups.map((group, i) => (
             <motion.div
               key={group.category}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 28 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.55, delay: i * 0.08 }}
+              transition={{ duration: 0.6, delay: i * 0.09 }}
+              className="border border-[#2a2520] p-6 hover:border-[#c9a96e]/30 transition-colors duration-500 group"
             >
-              <p
-                className="text-[#c9a96e] text-[9px] tracking-[0.4em] uppercase font-semibold mb-5 pb-3 border-b border-[#2a2520]"
-                style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
-              >
-                {group.category}
-              </p>
-              <ul className="space-y-2.5">
+              {/* Category header */}
+              <div className="flex items-center gap-2.5 mb-5 pb-4 border-b border-[#2a2520] group-hover:border-[#c9a96e]/20 transition-colors duration-500">
+                <span
+                  className="text-[#c9a96e]/60 text-[11px]"
+                  style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
+                >
+                  {group.icon}
+                </span>
+                <p
+                  className="text-[#c9a96e] text-[9px] tracking-[0.38em] uppercase font-semibold"
+                  style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
+                >
+                  {group.category}
+                </p>
+              </div>
+
+              {/* Skills */}
+              <div className="flex flex-wrap gap-2">
                 {group.skills.map((skill) => (
-                  <li
+                  <span
                     key={skill}
-                    className="text-[#6a6560] text-[12px] leading-snug hover:text-[#c0bdb8] transition-colors duration-300"
+                    className="text-[#a09890] text-[11px] border border-[#2a2520] px-2.5 py-1 hover:border-[#c9a96e]/40 hover:text-[#e8ddd0] transition-all duration-300 cursor-default leading-none"
                     style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
                   >
                     {skill}
-                  </li>
+                  </span>
                 ))}
-              </ul>
+              </div>
             </motion.div>
           ))}
         </div>
