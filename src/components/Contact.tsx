@@ -81,7 +81,7 @@ export default function Contact() {
 
           {/* Stat chips above CTA */}
           <div className="flex items-center justify-center gap-4 mb-14 flex-wrap">
-            {['$1M+ ARR Built', '1.5M+ Leads Managed', '75K+ Daily AI Calls'].map((stat) => (
+            {['$1M+ ARR Built', '1.5M+ Leads Managed', '100K+ Daily AI Calls'].map((stat) => (
               <span
                 key={stat}
                 className="text-[#c9a96e] text-[10px] tracking-[0.2em] uppercase border border-[#c9a96e]/25 px-4 py-2 bg-[#c9a96e]/[0.04] font-semibold"
@@ -122,7 +122,7 @@ export default function Contact() {
           Shaivya Bora
         </span>
         <span
-          className="text-[#2a2520] text-[9px] tracking-[0.25em] uppercase"
+          className="text-[#4a4540] text-[9px] tracking-[0.25em] uppercase"
           style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
         >
           © 2026 · Noida, India

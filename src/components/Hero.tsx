@@ -13,7 +13,7 @@ const fadeUp = {
 }
 
 const stats = [
-  { value: '75K+', label: 'Daily AI calling minutes', note: 'SquadStack', icon: '🤖' },
+  { value: '100K+', label: 'Daily AI calling minutes', note: 'SquadStack', icon: '🤖' },
   { value: '1.5M+', label: 'Leads managed via AI', note: 'SquadStack', icon: '📊' },
   { value: '$1M+', label: 'ARR built from scratch', note: 'Credit card issuer', icon: '💳' },
   { value: '100K+', label: 'Users scaled from zero', note: 'LEO1 Card', icon: '🚀' },
@@ -122,7 +122,7 @@ export default function Hero() {
               fontSize: '15px',
             }}
           >
-            Building enterprise AI voice bots at SquadStack. 75K+ daily calling minutes, 1.5M+ leads in pipeline.
+            Building enterprise AI voice bots at SquadStack. 100K+ daily calling minutes, 1.5M+ leads in pipeline.
             Previously built a $1M+ ARR revenue stream from scratch at one of India&apos;s largest Credit Card Issuers.
           </motion.p>
 

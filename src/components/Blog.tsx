@@ -7,7 +7,7 @@ const posts = [
     number: '001',
     title: 'Building AI Voice Bots at Scale: Lessons from SquadStack',
     excerpt:
-      'How we went from concept to 75K+ daily calling minutes and 1.5M+ leads. The product decisions, technical trade-offs, and what I learned about shipping AI in enterprise.',
+      'How we went from concept to 100K+ daily calling minutes and 1.5M+ leads. The product decisions, technical trade-offs, and what I learned about shipping AI in enterprise.',
     readTime: '~8 min',
     tags: ['AI', 'Product'],
   },

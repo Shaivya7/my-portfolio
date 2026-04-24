@@ -36,6 +36,17 @@ const projects = [
     accent: '#fb923c',
     href: 'https://drive.google.com/file/d/1Y_5leRLfKyLXYmnCMnxLA6Dr5gbjepjB/view',
   },
+  {
+    index: '04',
+    category: 'AI · QA Tooling',
+    title: 'Rehearsal',
+    description:
+      'A QA tool for testing AI voice bot prompts before they go live. Simulate lead conversations, run test cases, and get pass/fail verdicts so you ship with confidence.',
+    tags: ['AI', 'Developer Tool', 'LLM'],
+    color: '#1a2a2a',
+    accent: '#2dd4bf',
+    href: 'https://rehearsal-henna.vercel.app',
+  },
 ]
 
 export default function Projects() {
@@ -69,7 +80,7 @@ export default function Projects() {
           </h2>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {projects.map((project, i) => (
             <a
               key={project.index}
@@ -129,7 +140,7 @@ export default function Projects() {
                     {project.title}
                   </h3>
                   <p
-                    className="text-[#5a5550] leading-[1.8] mb-8"
+                    className="text-[#8a8480] leading-[1.8] mb-8"
                     style={{
                       fontFamily: 'var(--font-dm-var), Arial, sans-serif',
                       fontSize: '13px',

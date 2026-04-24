@@ -14,14 +14,14 @@ const experiences = [
       'Leading the full lifecycle of enterprise AI voice bots, from development and onboarding to deployment, across BFSI sales and app-journey use cases for clients including one of India\'s largest Credit Card Issuers.',
     bullets: [
       'Built & Managed revenue stream of $1M+ ARR from scratch for one of India\'s largest Credit Card Issuer.',
-      'Built AI voice bots using STT, TTS & LLMs processing 75K+ daily calling minutes',
+      'Built AI voice bots using STT, TTS & LLMs processing 100K+ daily calling minutes',
       'Managing 1.5M+ leads pipeline through intelligent AI-driven prioritization and routing',
       'Revamped lead prioritization & SIP call-transfer for instant hangups with contextual human routing',
       'Created an internal GPT to craft, evaluate, and optimize high-quality bot prompts',
     ],
     metrics: [
       { value: '$1M+', label: 'ARR built from scratch' },
-      { value: '75K+', label: 'Daily calling minutes' },
+      { value: '100K+', label: 'Daily calling minutes' },
       { value: '1.5M+', label: 'Leads in AI pipeline' },
     ],
     featuredQuote: 'Built & Managed revenue stream of $1M+ ARR from scratch for one of India\'s largest Credit Card Issuer.',
@@ -206,7 +206,7 @@ export default function Experience() {
                 {/* Right: description + bullets + featured quote */}
                 <div className="flex flex-col justify-center">
                   <p
-                    className="text-[#6a6560] leading-[1.9] mb-9"
+                    className="text-[#9a9490] leading-[1.9] mb-9"
                     style={{
                       fontFamily: 'var(--font-dm-var), Arial, sans-serif',
                       fontSize: '14px',
@@ -248,7 +248,7 @@ export default function Experience() {
                     {exp.bullets.map((bullet, bi) => (
                       <li
                         key={bi}
-                        className="flex gap-4 text-[#5a5550] leading-[1.75]"
+                        className="flex gap-4 text-[#8a8480] leading-[1.75]"
                         style={{
                           fontFamily: 'var(--font-dm-var), Arial, sans-serif',
                           fontSize: '13px',
