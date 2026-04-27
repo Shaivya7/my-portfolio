@@ -3,10 +3,10 @@
 import { motion } from 'framer-motion'
 
 const timeline = [
-  { year: '2025', role: 'PM – AI Agents', company: 'SquadStack', current: true },
-  { year: '2022', role: 'Product Manager II', company: 'LEO1 by Financepeer', current: false },
-  { year: '2022', role: 'Associate PM', company: 'Sportskeeda', current: false },
-  { year: '2021', role: 'Partnerships Manager', company: 'GreedyGame', current: false },
+  { year: '2025', role: 'PM – AI Agents', company: 'SquadStack', url: 'https://www.squadstack.ai/', current: true },
+  { year: '2022', role: 'Product Manager II', company: 'LEO1 by Financepeer', url: 'https://www.leo1.in/', current: false },
+  { year: '2022', role: 'Associate PM', company: 'Sportskeeda', url: 'https://www.sportskeeda.com/', current: false },
+  { year: '2021', role: 'Partnerships Manager', company: 'GreedyGame', url: 'https://greedygame.com/', current: false },
 ]
 
 const highlights = [
@@ -65,7 +65,8 @@ export default function About() {
             </p>
             <p>
               Built a $1M+ ARR revenue stream from scratch for one of India&apos;s largest Credit Card
-              Issuers, and scaled 1.5M+ leads through an AI-driven calling engine at SquadStack.
+              Issuers, and scaled 1.5M+ leads through an AI-driven calling engine at{' '}
+              <a href="https://www.squadstack.ai/" target="_blank" rel="noopener noreferrer" className="text-[#c9a96e] hover:text-[#e0c080] transition-colors duration-300">SquadStack</a>.
             </p>
             <p>
               I took a deliberate career break. Worked on my health, built AI side projects
@@ -182,12 +183,15 @@ export default function About() {
                         </span>
                       )}
                     </div>
-                    <span
-                      className="text-[#c0bdb8] text-[13px] font-medium"
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#c0bdb8] text-[13px] font-medium hover:text-[#c9a96e] transition-colors duration-300"
                       style={{ fontFamily: 'var(--font-dm-var), Arial, sans-serif' }}
                     >
                       {item.company}
-                    </span>
+                    </a>
                   </div>
                 </motion.div>
               ))}

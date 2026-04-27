@@ -6,6 +6,7 @@ const experiences = [
   {
     chapter: '01',
     company: 'SquadStack',
+    url: 'https://www.squadstack.ai/',
     role: 'Product Manager, AI Agents',
     period: 'Sept 2025 - Present',
     location: 'Noida',
@@ -29,6 +30,7 @@ const experiences = [
   {
     chapter: '02',
     company: 'LEO1 by Financepeer',
+    url: 'https://www.leo1.in/',
     role: 'Product Manager II',
     period: 'Oct 2022 - Nov 2024',
     location: 'Mumbai',
@@ -51,6 +53,7 @@ const experiences = [
   {
     chapter: '03',
     company: 'Sportskeeda',
+    url: 'https://www.sportskeeda.com/',
     role: 'Associate Product Manager',
     period: 'Jan 2022 - Sept 2022',
     location: 'Bengaluru',
@@ -72,6 +75,7 @@ const experiences = [
   {
     chapter: '04',
     company: 'GreedyGame',
+    url: 'https://greedygame.com/',
     role: 'Partnerships Manager',
     period: 'Apr 2021 - Jan 2022',
     location: 'Bengaluru',
@@ -161,7 +165,15 @@ export default function Experience() {
                       fontSize: '26px',
                     }}
                   >
-                    {exp.company}
+                    <a
+                      href={exp.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#c9a96e] transition-colors duration-300 inline-flex items-center gap-2 group/link"
+                    >
+                      {exp.company}
+                      <span className="text-[#c9a96e]/40 text-[14px] opacity-0 group-hover/link:opacity-100 transition-opacity duration-300">↗</span>
+                    </a>
                   </h3>
                   <p
                     className="text-[#a8a49e] text-[12px] mb-0.5 font-medium"
