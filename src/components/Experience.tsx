@@ -169,10 +169,10 @@ export default function Experience() {
                       href={exp.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-[#c9a96e] transition-colors duration-300 inline-flex items-center gap-2 group/link"
+                      className="text-[#c9a96e] hover:text-[#e0c080] transition-colors duration-300 inline-flex items-center gap-1.5"
                     >
                       {exp.company}
-                      <span className="text-[#c9a96e]/40 text-[14px] opacity-0 group-hover/link:opacity-100 transition-opacity duration-300">↗</span>
+                      <span className="text-[14px]">↗</span>
                     </a>
                   </h3>
                   <p
